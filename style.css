@@ -1,0 +1,93 @@
+/* Base Styles */
+html, body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #86c7f6;
+	flex-direction: column; /* Stack buttons and heading vertically on small screens */
+}
+
+h1{
+	align-items: center;
+	margin: 10px;
+	background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+	border: none;
+	border-radius: 8px;
+	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+	box-sizing: border-box;
+	color: #000000;
+	display: flex;
+	font-size: 100px; /* Adjust font size as needed */
+}
+p{
+
+	font-size:xx-large;
+	text-align: center;
+}
+
+button {
+	align-items: center;
+	margin: 10px;
+	background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+	border: none;
+	border-radius: 8px;
+	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+	box-sizing: border-box;
+	color: #ffffff;
+	display: flex;
+	font-size: 18px;
+	justify-content: center;
+	line-height: 1em;
+	width: 100%;
+	max-width: 300px; /* Limit the button width on larger screens */
+	min-width: 140px;
+	padding: 3px;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+	outline: 0;
+}
+
+button span {
+	background-color: rgb(5, 6, 45);
+	padding: 16px 24px;
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	transition: 300ms;
+}
+
+button:hover span {
+	background: none;
+}
+
+button:active {
+	transform: scale(0.9);
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+	/* For medium screens and above, center buttons in a row */
+	html, body {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 599px) {
+	/* For small screens, make buttons full width */
+	button {
+		max-width: 90%;
+	}
+}
